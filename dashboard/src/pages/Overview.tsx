@@ -41,19 +41,19 @@ export function Overview() {
   };
 
   return (
-    <div className="space-y-8">
+    <div className="page-content">
       {/* Header — Visibilidade do contexto (Nielsen: onde estou?) */}
       <header>
         <h1 className="text-2xl font-bold tracking-tight text-slate-900 md:text-3xl">
           Visão Geral
         </h1>
-        <p className="mt-1 text-sm text-slate-500">
+        <p className="mt-3 text-sm text-slate-500">
           Dashboard de planejamento Long Neck — Região NENO — Fev/2026
         </p>
       </header>
 
       {/* KPIs */}
-      <section className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4" aria-label="Indicadores principais">
+      <section className="section-grid section-grid-4" aria-label="Indicadores principais">
         <KPICard
           title="Demanda Fev (Original)"
           value={`${kpiSummary.totalDemandFev} KHL`}
@@ -86,7 +86,7 @@ export function Overview() {
       </section>
 
       {/* Charts Row */}
-      <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
+      <div className="section-grid section-grid-2">
         {/* Historical Demand */}
         <SectionCard title="Evolução de Vendas LN NENO" subtitle="KHL por ano">
           <ResponsiveContainer width="100%" height={260}>
@@ -135,7 +135,7 @@ export function Overview() {
       </div>
 
       {/* Bottom Row */}
-      <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
+      <div className="section-grid section-grid-3">
         {/* DOI by Region */}
         <SectionCard title="DOI por Região" subtitle="Suficiência final em dias (W0)">
           <ResponsiveContainer width="100%" height={220}>

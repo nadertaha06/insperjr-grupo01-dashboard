@@ -8,11 +8,15 @@ const Bar = styled.section`
   align-items: center;
   justify-content: space-between;
   gap: 10px;
-  margin-bottom: 14px;
-  padding: 10px 12px;
+  margin-bottom: 40px;
+  padding: 12px 30px;
   border: 1px solid #e2e8f0;
   border-radius: 14px;
   background: linear-gradient(90deg, #ffffff 0%, #f8fafc 100%);
+
+  @media (max-width: 640px) {
+    padding: 12px 16px;
+  }
 `;
 
 const Left = styled.div`

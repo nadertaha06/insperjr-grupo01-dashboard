@@ -44,20 +44,19 @@ const tooltipStyle = {
 
 export function Demand() {
   return (
-    <div className="space-y-16 lg:space-y-20">
-      <header className="space-y-3">
+    <div className="page-content">
+      <header>
         <h1 className="text-2xl font-bold tracking-tight text-slate-900 md:text-3xl">
           Análise de Demanda
         </h1>
-        <p className="text-base text-slate-500">
+        <p className="mt-3 text-sm text-slate-500">
           Evolução histórica e projeções de demanda Long Neck NENO
         </p>
       </header>
 
       {/* KPIs */}
-      <section className="py-2" aria-label="Indicadores de demanda">
-        <div className="grid grid-cols-1 gap-x-10 gap-y-16 sm:grid-cols-2 xl:grid-cols-4 xl:gap-x-12 xl:gap-y-14">
-          <div className="min-w-0 px-1">
+      <section aria-label="Indicadores de demanda">
+        <div className="section-grid section-grid-4">
           <KPICard
             className="h-full"
             title="Volume 2025"
@@ -67,16 +66,12 @@ export function Demand() {
             icon={<TrendUp size={22} weight="duotone" />}
             variant="success"
           />
-          </div>
-          <div className="min-w-0 px-1">
           <KPICard
             className="h-full"
             title="Demanda Fev Original"
             value="180 KHL"
             subtitle="Projeção inicial"
           />
-          </div>
-          <div className="min-w-0 px-1">
           <KPICard
             className="h-full"
             title="Nova Demanda Fev"
@@ -87,8 +82,6 @@ export function Demand() {
             trend="up"
             trendValue="+6.7%"
           />
-          </div>
-          <div className="min-w-0 px-1">
           <KPICard
             className="h-full"
             title="BIAS Médio"
@@ -97,12 +90,11 @@ export function Demand() {
             icon={<Warning size={22} weight="duotone" />}
             variant="danger"
           />
-          </div>
         </div>
       </section>
 
       {/* Historical Charts */}
-      <section className="grid grid-cols-1 gap-14 pt-2 lg:grid-cols-2 lg:gap-16" aria-label="Histórico de demanda">
+      <section className="section-grid section-grid-2 grid-cols-1" aria-label="Histórico de demanda">
         <SectionCard title="Venda Real LN NENO" subtitle="Volume KHL por ano (2021–2025)">
           <ResponsiveContainer width="100%" height={300}>
             <BarChart data={historicalDemand}>
@@ -154,7 +146,7 @@ export function Demand() {
       </section>
 
       {/* 2026 Projection */}
-      <section className="grid grid-cols-1 gap-14 pt-2 lg:grid-cols-2 lg:gap-16" aria-label="Projeções 2026">
+      <section className="section-grid section-grid-2 grid-cols-1" aria-label="Projeções 2026">
         <SectionCard
           title="Demanda Mensal 1S 2026"
           subtitle="Projeção original (KHL/mês)"
@@ -210,7 +202,7 @@ export function Demand() {
       </section>
 
       {/* Impact Summary */}
-      <section className="pt-2">
+      <section>
         <SectionCard title="Resumo do Impacto na Demanda">
         <div className="overflow-x-auto">
           <table className="w-full text-sm">

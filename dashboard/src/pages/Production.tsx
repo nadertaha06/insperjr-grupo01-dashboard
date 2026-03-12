@@ -53,18 +53,18 @@ const tooltipStyle = {
 
 export function Production() {
   return (
-    <div className="space-y-8">
+    <div className="page-content">
       <header>
         <h1 className="text-2xl font-bold tracking-tight text-slate-900 md:text-3xl">
           Capacidade Produtiva
         </h1>
-        <p className="mt-1 text-sm text-slate-500">
+        <p className="mt-3 text-sm text-slate-500">
           Linhas de produção Long Neck no Nordeste e unidades de suporte
         </p>
       </header>
 
       {/* KPIs */}
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="section-grid section-grid-4">
         <KPICard
           title="Capacidade Total NENO"
           value={`${totalCapacity} KHL/mês`}
@@ -95,7 +95,7 @@ export function Production() {
       </div>
 
       {/* Charts */}
-      <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
+      <div className="section-grid section-grid-2">
         <SectionCard title="Capacidade por Linha" subtitle="KHL/mês">
           <ResponsiveContainer width="100%" height={280}>
             <BarChart data={capacityData}>

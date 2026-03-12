@@ -43,7 +43,7 @@ const Card = styled.article`
   border-radius: 18px;
   border: 1px solid #e2e8f0;
   min-height: 210px;
-  padding: 26px;
+  padding: 30px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -56,7 +56,7 @@ const Card = styled.article`
 
   @media (max-width: 768px) {
     min-height: 185px;
-    padding: 22px;
+    padding: 24px;
   }
 `;
 

@@ -29,7 +29,11 @@ const Header = styled.div`
   justify-content: space-between;
   gap: 16px;
   border-bottom: 1px solid #f1f5f9;
-  padding: 20px 24px;
+  padding: 24px 30px;
+
+  @media (max-width: 640px) {
+    padding: 20px 16px;
+  }
 `;
 
 const HeaderText = styled.div`
@@ -42,19 +46,25 @@ const Title = styled.h3`
   font-weight: 600;
   letter-spacing: -0.02em;
   color: #0f172a;
+  line-height: 1.3;
 `;
 
 const Subtitle = styled.p`
-  margin: 6px 0 0;
+  margin: 10px 0 0;
   font-size: 15px;
   color: #64748b;
+  line-height: 1.4;
 `;
 
 const Body = styled.div`
-  padding: 28px 24px;
+  padding: 36px 30px;
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 24px;
+
+  @media (max-width: 640px) {
+    padding: 28px 16px;
+  }
 `;
 
 export function SectionCard({

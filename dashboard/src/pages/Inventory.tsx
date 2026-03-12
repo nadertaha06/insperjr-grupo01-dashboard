@@ -50,18 +50,18 @@ export function Inventory() {
   );
 
   return (
-    <div className="space-y-8">
+    <div className="page-content">
       <header>
         <h1 className="text-2xl font-bold tracking-tight text-slate-900 md:text-3xl">
           Gestão de Estoque
         </h1>
-        <p className="mt-1 text-sm text-slate-500">
+        <p className="mt-3 text-sm text-slate-500">
           Balanço de estoque e suficiência (DOI) por região — W0 (02/02/2026)
         </p>
       </header>
 
       {/* KPIs */}
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="section-grid section-grid-4">
         <KPICard
           title="Estoque Inicial Total"
           value={`${inventoryTotals.estoqueInicial.toLocaleString()} HL`}
@@ -92,7 +92,7 @@ export function Inventory() {
       </div>
 
       {/* Charts */}
-      <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
+      <div className="section-grid section-grid-2">
         <SectionCard title="Estoque Inicial vs Final" subtitle="HL por região">
           <ResponsiveContainer width="100%" height={300}>
             <BarChart data={stockComparison}>

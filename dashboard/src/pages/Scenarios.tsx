@@ -103,19 +103,19 @@ export function Scenarios() {
   });
 
   return (
-    <div className="space-y-14 lg:space-y-16 pb-10">
+    <div className="page-content pb-12">
       <header>
         <h1 className="text-2xl font-bold tracking-tight text-slate-900 md:text-3xl">
           Simulador de Cenários
         </h1>
-        <p className="mt-3 text-base text-slate-500">
+        <p className="mt-3 text-sm text-slate-500">
           Ajuste parâmetros e avalie impactos em custo, produção e transferências
         </p>
       </header>
 
       {/* Controls */}
       <SectionCard title="Parâmetros do Cenário" subtitle="Ajuste os valores para simular">
-        <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4">
+        <div className="section-grid section-grid-4">
           {/* Malzbier Increase */}
           <div className="rounded-xl border border-slate-100 bg-slate-50/70 p-5">
             <label className="mb-3 block text-sm font-semibold text-slate-700">
@@ -208,7 +208,7 @@ export function Scenarios() {
       </SectionCard>
 
       {/* Result KPIs */}
-      <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="section-grid section-grid-4">
         <KPICard
           className="h-full"
           title="Nova Demanda Fev"
@@ -254,7 +254,7 @@ export function Scenarios() {
       </div>
 
       {/* Charts */}
-      <div className="grid grid-cols-1 gap-12 lg:grid-cols-2">
+      <div className="section-grid section-grid-2">
         <SectionCard title="Demanda vs Capacidade" subtitle="KHL/mês — 1S 2026">
           <ResponsiveContainer width="100%" height={300}>
             <LineChart data={demandVsCapacity}>
@@ -390,7 +390,7 @@ export function Scenarios() {
 
       {/* Risk Analysis */}
       <SectionCard title="Análise de Riscos">
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="section-grid section-grid-3">
           <div className="rounded-lg border border-amber-200 bg-amber-50 p-5">
             <h4 className="flex items-center gap-2 font-semibold text-amber-800">
               <Warning size={18} /> BIAS de Demanda

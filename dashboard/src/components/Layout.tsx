@@ -19,17 +19,22 @@ const Shell = styled.div`
 const Content = styled.main`
   min-width: 0;
   min-height: 100vh;
-  padding: 20px 24px 28px;
+  padding: 40px 40px 56px;
   overflow-x: auto;
 
   @media (max-width: 1024px) {
-    padding: 16px;
+    padding: 28px 24px 40px;
+  }
+
+  @media (max-width: 640px) {
+    padding: 20px 16px 32px;
   }
 `;
 
 const ContentInner = styled.div`
   width: min(1500px, 100%);
   margin: 0 auto;
+  padding-top: 12px;
 `;
 
 export function Layout() {

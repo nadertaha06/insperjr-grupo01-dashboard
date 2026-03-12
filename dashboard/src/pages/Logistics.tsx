@@ -45,18 +45,18 @@ const routeData = [
 
 export function Logistics() {
   return (
-    <div className="space-y-8">
+    <div className="page-content">
       <header>
         <h1 className="text-2xl font-bold tracking-tight text-slate-900 md:text-3xl">
           Logística & Transferências
         </h1>
-        <p className="mt-1 text-sm text-slate-500">
+        <p className="mt-3 text-sm text-slate-500">
           Modais de transporte, rotas e custos de distribuição
         </p>
       </header>
 
       {/* KPIs */}
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="section-grid section-grid-4">
         <KPICard
           title="Lead Time Cabotagem"
           value="25 dias"
@@ -87,7 +87,7 @@ export function Logistics() {
       </div>
 
       {/* Comparison Chart */}
-      <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
+      <div className="section-grid section-grid-2">
         <SectionCard title="Comparação de Modais" subtitle="Cabotagem vs Rodoviário">
           <ResponsiveContainer width="100%" height={300}>
             <BarChart data={transferComparison}>
@@ -192,7 +192,7 @@ export function Logistics() {
       </SectionCard>
 
       {/* Distribution Centers & Units */}
-      <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
+      <div className="section-grid section-grid-2">
         <SectionCard title="Centros de Distribuição" subtitle="CDRs do Nordeste">
           <div className="space-y-3">
             {distributionCenters.map((dc) => (
