@@ -1,6 +1,6 @@
 /**
  * Cliente HTTP para a API REST do Dashboard Executivo Ambev.
- * Base URL: configurável por VITE_API_BASE_URL (default http://localhost:5000/api/v1).
+ * Base URL: VITE_API_URL (origem) ou VITE_API_BASE_URL (base completa). Em dev usa localhost:5000.
  * Método: apenas GET (API read-only). Sem autenticação.
  */
 
