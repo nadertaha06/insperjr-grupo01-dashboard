@@ -14,6 +14,7 @@ declare module "*.svg" {
   }
 
   interface ImportMetaEnv {
+    readonly DEV: boolean;
     /** URL do backend (origem, sem /api/v1). Ex.: https://seu-backend.onrender.com */
     readonly VITE_API_URL?: string;
     /** Base completa da API (alternativa a VITE_API_URL). Ex.: https://seu-backend.onrender.com/api/v1 */
