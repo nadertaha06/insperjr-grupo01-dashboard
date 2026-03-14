@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s \"http://localhost:5000/api/v1/producao-pcp?per_page=2\")",
+      "Bash(curl -s \"http://localhost:5000/api/v1/custos?per_page=3\")",
+      "Bash(curl -s \"http://localhost:5000/api/v1/transferencias?per_page=3\")",
+      "Bash(curl -s \"http://localhost:5000/api/v1/cenarios-semanais?per_page=1\")",
+      "Bash(npx tsc:*)",
+      "Bash(curl -s \"http://localhost:5000/api/v1/cenario-atual-br?is_total=false&per_page=100\")",
+      "Bash(curl -s \"http://localhost:5000/api/v1/custos?per_page=100\")",
+      "Bash(python -c \":*)",
+      "Bash(curl -s \"http://localhost:5000/api/v1/cenarios-semanais?per_page=500\")",
+      "Bash(python /tmp/analyze_semanais.py)",
+      "Bash(echo $TEMP)",
+      "Read(//c/Users/Operador/Documents/insper/insperjr-grupo01-dashboard/**)",
+      "Bash(findstr /i \"dashboard\")",
+      "Bash(dir \"C:\\\\Users\\\\Operador\\\\Documents\\\\insper\" /b)",
+      "Bash(python -m markitdown \"C:\\\\Users\\\\Operador\\\\Downloads\\\\Onboarding Candidatos PS Eng Tech - 50a.pptx\")"
+    ]
+  }
+}
