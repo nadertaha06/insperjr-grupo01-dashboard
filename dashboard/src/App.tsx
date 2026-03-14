@@ -5,7 +5,7 @@ import { Demand } from "@/pages/Demand";
 import { Production } from "@/pages/Production";
 import { Logistics } from "@/pages/Logistics";
 import { Inventory } from "@/pages/Inventory";
-import { Scenarios } from "@/pages/Scenarios";
+
 
 function App() {
   return (
@@ -17,7 +17,6 @@ function App() {
           <Route path="/producao" element={<Production />} />
           <Route path="/logistica" element={<Logistics />} />
           <Route path="/estoque" element={<Inventory />} />
-          <Route path="/cenarios" element={<Scenarios />} />
         </Route>
       </Routes>
     </BrowserRouter>

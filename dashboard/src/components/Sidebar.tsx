@@ -16,7 +16,6 @@ const navItems = [
   { to: "/producao", icon: Factory, label: "Produção" },
   { to: "/logistica", icon: Truck, label: "Logística" },
   { to: "/estoque", icon: Package, label: "Estoque" },
-  { to: "/cenarios", icon: Sliders, label: "Cenários" },
 ];
 
 const Aside = styled.aside`
